@@ -1,0 +1,1540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		545B81EC8EAE85FAEDA93867 /* Pods_MeowInvoice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48899BC65C2563EB7DF96CEC /* Pods_MeowInvoice.framework */; };
+		630BDBB61EDBBC2F00CA9BA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630BDBB51EDBBC2F00CA9BA1 /* AppDelegate.swift */; };
+		630BDBB81EDBBC2F00CA9BA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630BDBB71EDBBC2F00CA9BA1 /* ViewController.swift */; };
+		630BDBBB1EDBBC2F00CA9BA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630BDBB91EDBBC2F00CA9BA1 /* Main.storyboard */; };
+		630BDBBD1EDBBC2F00CA9BA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 630BDBBC1EDBBC2F00CA9BA1 /* Assets.xcassets */; };
+		630BDBC01EDBBC2F00CA9BA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630BDBBE1EDBBC2F00CA9BA1 /* LaunchScreen.storyboard */; };
+		630BDBCB1EDBBC2F00CA9BA1 /* MeowInvoiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630BDBCA1EDBBC2F00CA9BA1 /* MeowInvoiceTests.swift */; };
+		630BDBD61EDBBC2F00CA9BA1 /* MeowInvoiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630BDBD51EDBBC2F00CA9BA1 /* MeowInvoiceUITests.swift */; };
+		630BDBE51EDBBF2400CA9BA1 /* FetchInvoiceAwards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630BDBE41EDBBF2400CA9BA1 /* FetchInvoiceAwards.swift */; };
+		630BDBE71EDBBF3F00CA9BA1 /* InvoiceAwards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630BDBE61EDBBF3F00CA9BA1 /* InvoiceAwards.swift */; };
+		630BDBE91EDBC10700CA9BA1 /* NetworkRequestConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630BDBE81EDBC10700CA9BA1 /* NetworkRequestConfig.swift */; };
+		6317F5451F1A03CE00F5BF4A /* Release.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6317F5441F1A03CE00F5BF4A /* Release.swift */; };
+		6317F5471F1A07B800F5BF4A /* amplitude-dev.apikey in Resources */ = {isa = PBXBuildFile; fileRef = 6317F5461F1A07B800F5BF4A /* amplitude-dev.apikey */; };
+		631D9A091F0DE01E0045425D /* MeowNavigationTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631D9A081F0DE01E0045425D /* MeowNavigationTransitioningDelegate.swift */; };
+		6328F9531F160D8900CA6B0C /* MeowSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6328F9521F160D8900CA6B0C /* MeowSound.swift */; };
+		6328F9601F1611BB00CA6B0C /* google_win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6328F9581F1611BB00CA6B0C /* google_win.wav */; };
+		6328F9641F1611BB00CA6B0C /* tick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6328F95C1F1611BB00CA6B0C /* tick.wav */; };
+		6328F9671F1612C600CA6B0C /* meow_win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6328F9651F1612C600CA6B0C /* meow_win.wav */; };
+		6328F9681F1612C600CA6B0C /* ringtone_win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6328F9661F1612C600CA6B0C /* ringtone_win.wav */; };
+		6328F96A1F16134100CA6B0C /* error.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6328F9691F16134100CA6B0C /* error.wav */; };
+		6333BAFE1EF0F22C00D9F6E3 /* MonthDropDownSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333BAFD1EF0F22C00D9F6E3 /* MonthDropDownSelectorView.swift */; };
+		6333BB001EF129CB00D9F6E3 /* ShortInvoiceValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333BAFF1EF129CB00D9F6E3 /* ShortInvoiceValidationService.swift */; };
+		6333BB031EF13F3600D9F6E3 /* MeowMoreOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333BB021EF13F3600D9F6E3 /* MeowMoreOptionViewController.swift */; };
+		6333BB051EF1403900D9F6E3 /* MeowMoreOptionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333BB041EF1403900D9F6E3 /* MeowMoreOptionPresenter.swift */; };
+		6333BB071EF1404A00D9F6E3 /* MeowMoreOptionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333BB061EF1404A00D9F6E3 /* MeowMoreOptionRouter.swift */; };
+		6333BB091EF1405600D9F6E3 /* MeowMoreOptionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333BB081EF1405600D9F6E3 /* MeowMoreOptionBuilder.swift */; };
+		6333BB0B1EF1406400D9F6E3 /* MeowMoreOptionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333BB0A1EF1406400D9F6E3 /* MeowMoreOptionInteractor.swift */; };
+		6333BB0D1EF146AF00D9F6E3 /* MeowCheckBoxTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6333BB0C1EF146AF00D9F6E3 /* MeowCheckBoxTableViewCell.xib */; };
+		6333BB0F1EF146CC00D9F6E3 /* MeowCheckBoxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333BB0E1EF146CC00D9F6E3 /* MeowCheckBoxTableViewCell.swift */; };
+		6333BB111EF14ABE00D9F6E3 /* MeowToggleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333BB101EF14ABE00D9F6E3 /* MeowToggleTableViewCell.swift */; };
+		6333BB131EF14AC600D9F6E3 /* MeowToggleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6333BB121EF14AC600D9F6E3 /* MeowToggleTableViewCell.xib */; };
+		6333BB151EF1669300D9F6E3 /* DefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333BB141EF1669300D9F6E3 /* DefaultKeys.swift */; };
+		6333BB171EF167F100D9F6E3 /* SoundStoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333BB161EF167F100D9F6E3 /* SoundStoreService.swift */; };
+		6333BB1A1EF27E4500D9F6E3 /* MeowNavigationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333BB191EF27E4500D9F6E3 /* MeowNavigationPresenter.swift */; };
+		6333BB1C1EF27E4E00D9F6E3 /* MeowNavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333BB1B1EF27E4E00D9F6E3 /* MeowNavigationRouter.swift */; };
+		6333BB1E1EF27E5600D9F6E3 /* MeowNavigationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333BB1D1EF27E5600D9F6E3 /* MeowNavigationInteractor.swift */; };
+		6333BB201EF27ECF00D9F6E3 /* MeowNavigationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333BB1F1EF27ECF00D9F6E3 /* MeowNavigationBuilder.swift */; };
+		6333BB221EF2903600D9F6E3 /* MeowNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333BB211EF2903600D9F6E3 /* MeowNotification.swift */; };
+		6342EAD11EDE5C03003AE3B9 /* InvoiceValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6342EAD01EDE5C03003AE3B9 /* InvoiceValidationService.swift */; };
+		6342EAD31EDE6085003AE3B9 /* Invoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6342EAD21EDE6085003AE3B9 /* Invoice.swift */; };
+		6342EAD51EDE60B5003AE3B9 /* ShortInvoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6342EAD41EDE60B5003AE3B9 /* ShortInvoice.swift */; };
+		6342EADB1EDE6D33003AE3B9 /* InvoiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6342EADA1EDE6D33003AE3B9 /* InvoiceSpec.swift */; };
+		6342EADD1EDE7F86003AE3B9 /* ShortInvoiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6342EADC1EDE7F86003AE3B9 /* ShortInvoiceSpec.swift */; };
+		6342EADF1EDE826E003AE3B9 /* InvoiceAwardSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6342EADE1EDE826E003AE3B9 /* InvoiceAwardSpec.swift */; };
+		6342EAE11EDE869D003AE3B9 /* DefaultInvoiceValidationServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6342EAE01EDE869D003AE3B9 /* DefaultInvoiceValidationServiceSpec.swift */; };
+		63439A4D1EF0E1F200CCBEEB /* KeyboardCheckerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63439A4C1EF0E1F200CCBEEB /* KeyboardCheckerBuilder.swift */; };
+		63439A4F1EF0E26900CCBEEB /* KeyboardCheckerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63439A4E1EF0E26900CCBEEB /* KeyboardCheckerPresenter.swift */; };
+		63439A511EF0E2C700CCBEEB /* KeyboardCheckerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63439A501EF0E2C700CCBEEB /* KeyboardCheckerInteractor.swift */; };
+		63439A541EF0E2F200CCBEEB /* KeyboardCheckerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63439A531EF0E2F200CCBEEB /* KeyboardCheckerRouter.swift */; };
+		63439A571EF0F17C00CCBEEB /* MonthSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63439A561EF0F17C00CCBEEB /* MonthSelectorViewController.swift */; };
+		63517AB71EE0778C0014D9D5 /* ArraySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63517AB61EE0778C0014D9D5 /* ArraySpec.swift */; };
+		63517ACB1EE0FFFD0014D9D5 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63517AB81EE0FFFD0014D9D5 /* ArrayExtension.swift */; };
+		63517ACC1EE0FFFD0014D9D5 /* CollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63517AB91EE0FFFD0014D9D5 /* CollectionExtension.swift */; };
+		63517ACD1EE0FFFD0014D9D5 /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63517ABA1EE0FFFD0014D9D5 /* DataExtension.swift */; };
+		63517ACE1EE0FFFD0014D9D5 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63517ABB1EE0FFFD0014D9D5 /* DateExtension.swift */; };
+		63517ACF1EE0FFFD0014D9D5 /* NSObejctExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63517ABC1EE0FFFD0014D9D5 /* NSObejctExtension.swift */; };
+		63517AD01EE0FFFD0014D9D5 /* NumberExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63517ABD1EE0FFFD0014D9D5 /* NumberExtension.swift */; };
+		63517AD11EE0FFFD0014D9D5 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63517ABE1EE0FFFD0014D9D5 /* Queue.swift */; };
+		63517AD31EE0FFFD0014D9D5 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63517AC01EE0FFFD0014D9D5 /* StringExtension.swift */; };
+		63517AD41EE0FFFD0014D9D5 /* SwiftyJSONExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63517AC11EE0FFFD0014D9D5 /* SwiftyJSONExtension.swift */; };
+		63517AD51EE0FFFD0014D9D5 /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63517AC21EE0FFFD0014D9D5 /* UIAlertControllerExtension.swift */; };
+		63517AD61EE0FFFD0014D9D5 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63517AC31EE0FFFD0014D9D5 /* UIApplicationExtension.swift */; };
+		63517AD71EE0FFFD0014D9D5 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63517AC41EE0FFFD0014D9D5 /* UICollectionViewExtension.swift */; };
+		63517AD81EE0FFFD0014D9D5 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63517AC51EE0FFFD0014D9D5 /* UIColorExtension.swift */; };
+		63517AD91EE0FFFD0014D9D5 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63517AC61EE0FFFD0014D9D5 /* UIImageExtension.swift */; };
+		63517ADA1EE0FFFD0014D9D5 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63517AC71EE0FFFD0014D9D5 /* UILabelExtension.swift */; };
+		63517ADB1EE0FFFD0014D9D5 /* UITableViewExtensios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63517AC81EE0FFFD0014D9D5 /* UITableViewExtensios.swift */; };
+		63517ADC1EE0FFFD0014D9D5 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63517AC91EE0FFFD0014D9D5 /* UIViewControllerExtension.swift */; };
+		63517ADD1EE0FFFD0014D9D5 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63517ACA1EE0FFFD0014D9D5 /* UIViewExtension.swift */; };
+		63517AE01EE10FEC0014D9D5 /* QRCodeScannerInteractorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63517ADF1EE10FEC0014D9D5 /* QRCodeScannerInteractorSpec.swift */; };
+		63517AE21EE1164E0014D9D5 /* InvoiceAwardsStoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63517AE11EE1164E0014D9D5 /* InvoiceAwardsStoreService.swift */; };
+		63517AE51EE4078B0014D9D5 /* MeowNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63517AE41EE4078B0014D9D5 /* MeowNavigationBar.swift */; };
+		63517AE71EE40A5B0014D9D5 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63517AE61EE40A5B0014D9D5 /* UIButtonExtension.swift */; };
+		63517AE91EE40AC60014D9D5 /* MeowInvoiceColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63517AE81EE40AC60014D9D5 /* MeowInvoiceColor.swift */; };
+		63606A9C1F1081C900E3F5B7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63606A9B1F1081C900E3F5B7 /* GoogleService-Info.plist */; };
+		63606A9F1F126C3500E3F5B7 /* AnalyticsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63606A9E1F126C3500E3F5B7 /* AnalyticsHelper.swift */; };
+		63606AA11F134AC100E3F5B7 /* NotificationSettingStoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63606AA01F134AC100E3F5B7 /* NotificationSettingStoreService.swift */; };
+		6363C4651F1F588F009448D0 /* ringtone_fail.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6363C4621F1F588F009448D0 /* ringtone_fail.wav */; };
+		6363C4661F1F588F009448D0 /* meow_fail.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6363C4631F1F588F009448D0 /* meow_fail.wav */; };
+		6363C4671F1F588F009448D0 /* google_fail.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6363C4641F1F588F009448D0 /* google_fail.wav */; };
+		636969C51EE4473F0047DD03 /* MeowNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636969C41EE4473F0047DD03 /* MeowNavigationController.swift */; };
+		636969C81EE456310047DD03 /* MeowFrontPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636969C71EE456310047DD03 /* MeowFrontPageViewController.swift */; };
+		636969CB1EE4F2360047DD03 /* CheckInvoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636969CA1EE4F2360047DD03 /* CheckInvoiceView.swift */; };
+		636969CD1EE4F5CD0047DD03 /* InvoiceInformationCheckerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636969CC1EE4F5CD0047DD03 /* InvoiceInformationCheckerView.swift */; };
+		636969CF1EE4FDA10047DD03 /* CircularCountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636969CE1EE4FDA10047DD03 /* CircularCountdownView.swift */; };
+		636969D21EE51FE40047DD03 /* KeyboardCheckerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636969D11EE51FE40047DD03 /* KeyboardCheckerViewController.swift */; };
+		636969D51EE5217A0047DD03 /* MeowKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636969D41EE5217A0047DD03 /* MeowKeyboardView.swift */; };
+		636969D71EE521EA0047DD03 /* MeowKeyboardKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636969D61EE521EA0047DD03 /* MeowKeyboardKeyView.swift */; };
+		636969D91EE58D8D0047DD03 /* KeyboardInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636969D81EE58D8D0047DD03 /* KeyboardInputView.swift */; };
+		636AD0BB1EF7E8320030DB0D /* HitTestExtendedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636AD0BA1EF7E8320030DB0D /* HitTestExtendedView.swift */; };
+		636AD0C01EF8FD4A0030DB0D /* KeyboardCheckerDefaultBuilderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636AD0BF1EF8FD4A0030DB0D /* KeyboardCheckerDefaultBuilderSpec.swift */; };
+		636AD0C21EF90D170030DB0D /* QRCodeInvoiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636AD0C11EF90D170030DB0D /* QRCodeInvoiceSpec.swift */; };
+		636AD0C41EF919FC0030DB0D /* QRCodeScannerPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636AD0C31EF919FC0030DB0D /* QRCodeScannerPresenterSpec.swift */; };
+		636AD0C71EF9215A0030DB0D /* InvoiceAwardsStoreServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636AD0C61EF9215A0030DB0D /* InvoiceAwardsStoreServiceSpec.swift */; };
+		636AD0C91EF93DB30030DB0D /* KeyboardCheckerDefaultInteractorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636AD0C81EF93DB30030DB0D /* KeyboardCheckerDefaultInteractorSpec.swift */; };
+		636AD0CB1EF93DBD0030DB0D /* KeyboardCheckerDefaultPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636AD0CA1EF93DBD0030DB0D /* KeyboardCheckerDefaultPresenterSpec.swift */; };
+		63775B9F1F15CFF000E52065 /* fabric.apikey in Resources */ = {isa = PBXBuildFile; fileRef = 63775B9E1F15CFF000E52065 /* fabric.apikey */; };
+		63775BA31F15DCAD00E52065 /* amplitude.apikey in Resources */ = {isa = PBXBuildFile; fileRef = 63775BA21F15DCAD00E52065 /* amplitude.apikey */; };
+		63775BA51F15DCB700E52065 /* admob.apikey in Resources */ = {isa = PBXBuildFile; fileRef = 63775BA41F15DCB700E52065 /* admob.apikey */; };
+		63775BA71F15DCCF00E52065 /* SecretKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63775BA61F15DCCF00E52065 /* SecretKey.swift */; };
+		637CA4761EE7DC25004F5ECE /* PreviewInvoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637CA4751EE7DC25004F5ECE /* PreviewInvoiceViewController.swift */; };
+		637CA4781EE7DC67004F5ECE /* MeowPresentModallyNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637CA4771EE7DC67004F5ECE /* MeowPresentModallyNavigationBar.swift */; };
+		637CA47A1EE7ED1C004F5ECE /* InvoiceAwardsInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637CA4791EE7ED1C004F5ECE /* InvoiceAwardsInformationView.swift */; };
+		637CA47D1EE7FEA7004F5ECE /* MeowFrontPageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637CA47C1EE7FEA7004F5ECE /* MeowFrontPageRouter.swift */; };
+		637CA47F1EE7FFAD004F5ECE /* VIPERRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637CA47E1EE7FFAD004F5ECE /* VIPERRouter.swift */; };
+		63B76AC21EE6860700F6E1E1 /* ResultDisplayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B76AC11EE6860700F6E1E1 /* ResultDisplayerView.swift */; };
+		63B76AC51EE6897A00F6E1E1 /* CountDownService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B76AC41EE6897A00F6E1E1 /* CountDownService.swift */; };
+		63B76AC81EE6945000F6E1E1 /* CountDownServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B76AC71EE6945000F6E1E1 /* CountDownServiceSpec.swift */; };
+		63B76AD21EE69D8100F6E1E1 /* MeowFrontPageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B76AD11EE69D8100F6E1E1 /* MeowFrontPageBuilder.swift */; };
+		63B76AD41EE69DD000F6E1E1 /* MeowFrontPageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B76AD31EE69DD000F6E1E1 /* MeowFrontPageInteractor.swift */; };
+		63B76AD61EE69FBF00F6E1E1 /* MeowFrontPagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B76AD51EE69FBF00F6E1E1 /* MeowFrontPagePresenter.swift */; };
+		63B76AD91EE6CABC00F6E1E1 /* QRCodeInvoiceValidatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B76AD81EE6CABC00F6E1E1 /* QRCodeInvoiceValidatorService.swift */; };
+		63BF64B41F166A8C00650A39 /* adUnitID.apikey in Resources */ = {isa = PBXBuildFile; fileRef = 63BF64B31F166A8C00650A39 /* adUnitID.apikey */; };
+		63E336E41EDFFFD400AEB06B /* InvoiceQRCodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E336E31EDFFFD400AEB06B /* InvoiceQRCodeScannerViewController.swift */; };
+		63E336EA1EE0009A00AEB06B /* InvoiceQRCodeScannerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E336E91EE0009A00AEB06B /* InvoiceQRCodeScannerBuilder.swift */; };
+		63E336F01EE0024F00AEB06B /* InvoiceQRCodeScannerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E336EF1EE0024F00AEB06B /* InvoiceQRCodeScannerPresenter.swift */; };
+		63E336F31EE0064E00AEB06B /* QRCodeScannerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E336F21EE0064E00AEB06B /* QRCodeScannerService.swift */; };
+		63E336F81EE0272100AEB06B /* InvoiceQRCodeScannerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E336F71EE0272100AEB06B /* InvoiceQRCodeScannerInteractor.swift */; };
+		63E336FB1EE027C500AEB06B /* InvoiceQRCodeScannerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E336FA1EE027C500AEB06B /* InvoiceQRCodeScannerRouter.swift */; };
+		63E336FE1EE028EE00AEB06B /* QRCodeDecoderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E336FD1EE028EE00AEB06B /* QRCodeDecoderService.swift */; };
+		63E337001EE0374300AEB06B /* QRCodeInvoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E336FF1EE0374300AEB06B /* QRCodeInvoice.swift */; };
+		63E337071EE06D0C00AEB06B /* QRCodeDecoderServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E337061EE06D0C00AEB06B /* QRCodeDecoderServiceSpec.swift */; };
+		B6E4AE55409C7CC20E18B6A3 /* Pods_MeowInvoiceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9F18684D61B4C2ACF3DCA8 /* Pods_MeowInvoiceUITests.framework */; };
+		B7667BF265EF1726BD9C5C2E /* Pods_MeowInvoiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A69F22A8047A3BC98AECAB /* Pods_MeowInvoiceTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		630BDBC71EDBBC2F00CA9BA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 630BDBAA1EDBBC2F00CA9BA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 630BDBB11EDBBC2F00CA9BA1;
+			remoteInfo = MeowInvoice;
+		};
+		630BDBD21EDBBC2F00CA9BA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 630BDBAA1EDBBC2F00CA9BA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 630BDBB11EDBBC2F00CA9BA1;
+			remoteInfo = MeowInvoice;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0EDC5AF80B2751E5A95D9CAE /* Pods-MeowInvoiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeowInvoiceTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeowInvoiceTests/Pods-MeowInvoiceTests.release.xcconfig"; sourceTree = "<group>"; };
+		37FEAE4123FADDC5A8DDAF8D /* Pods-MeowInvoiceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeowInvoiceUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeowInvoiceUITests/Pods-MeowInvoiceUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F9F18684D61B4C2ACF3DCA8 /* Pods_MeowInvoiceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeowInvoiceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48899BC65C2563EB7DF96CEC /* Pods_MeowInvoice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeowInvoice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		630BDBB21EDBBC2F00CA9BA1 /* MeowInvoice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeowInvoice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		630BDBB51EDBBC2F00CA9BA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		630BDBB71EDBBC2F00CA9BA1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		630BDBBA1EDBBC2F00CA9BA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		630BDBBC1EDBBC2F00CA9BA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		630BDBBF1EDBBC2F00CA9BA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		630BDBC11EDBBC2F00CA9BA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		630BDBC61EDBBC2F00CA9BA1 /* MeowInvoiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeowInvoiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		630BDBCA1EDBBC2F00CA9BA1 /* MeowInvoiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowInvoiceTests.swift; sourceTree = "<group>"; };
+		630BDBCC1EDBBC2F00CA9BA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		630BDBD11EDBBC2F00CA9BA1 /* MeowInvoiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeowInvoiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		630BDBD51EDBBC2F00CA9BA1 /* MeowInvoiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowInvoiceUITests.swift; sourceTree = "<group>"; };
+		630BDBD71EDBBC2F00CA9BA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		630BDBE41EDBBF2400CA9BA1 /* FetchInvoiceAwards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchInvoiceAwards.swift; sourceTree = "<group>"; };
+		630BDBE61EDBBF3F00CA9BA1 /* InvoiceAwards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceAwards.swift; sourceTree = "<group>"; };
+		630BDBE81EDBC10700CA9BA1 /* NetworkRequestConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequestConfig.swift; sourceTree = "<group>"; };
+		6317F5441F1A03CE00F5BF4A /* Release.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Release.swift; sourceTree = "<group>"; };
+		6317F5461F1A07B800F5BF4A /* amplitude-dev.apikey */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "amplitude-dev.apikey"; sourceTree = "<group>"; };
+		631D9A081F0DE01E0045425D /* MeowNavigationTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeowNavigationTransitioningDelegate.swift; sourceTree = "<group>"; };
+		6328F9521F160D8900CA6B0C /* MeowSound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeowSound.swift; sourceTree = "<group>"; };
+		6328F9581F1611BB00CA6B0C /* google_win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = google_win.wav; sourceTree = "<group>"; };
+		6328F95C1F1611BB00CA6B0C /* tick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tick.wav; sourceTree = "<group>"; };
+		6328F9651F1612C600CA6B0C /* meow_win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = meow_win.wav; sourceTree = "<group>"; };
+		6328F9661F1612C600CA6B0C /* ringtone_win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ringtone_win.wav; sourceTree = "<group>"; };
+		6328F9691F16134100CA6B0C /* error.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = error.wav; sourceTree = "<group>"; };
+		6333BAFD1EF0F22C00D9F6E3 /* MonthDropDownSelectorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthDropDownSelectorView.swift; sourceTree = "<group>"; };
+		6333BAFF1EF129CB00D9F6E3 /* ShortInvoiceValidationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortInvoiceValidationService.swift; sourceTree = "<group>"; };
+		6333BB021EF13F3600D9F6E3 /* MeowMoreOptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeowMoreOptionViewController.swift; sourceTree = "<group>"; };
+		6333BB041EF1403900D9F6E3 /* MeowMoreOptionPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeowMoreOptionPresenter.swift; sourceTree = "<group>"; };
+		6333BB061EF1404A00D9F6E3 /* MeowMoreOptionRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeowMoreOptionRouter.swift; sourceTree = "<group>"; };
+		6333BB081EF1405600D9F6E3 /* MeowMoreOptionBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeowMoreOptionBuilder.swift; sourceTree = "<group>"; };
+		6333BB0A1EF1406400D9F6E3 /* MeowMoreOptionInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeowMoreOptionInteractor.swift; sourceTree = "<group>"; };
+		6333BB0C1EF146AF00D9F6E3 /* MeowCheckBoxTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeowCheckBoxTableViewCell.xib; sourceTree = "<group>"; };
+		6333BB0E1EF146CC00D9F6E3 /* MeowCheckBoxTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeowCheckBoxTableViewCell.swift; sourceTree = "<group>"; };
+		6333BB101EF14ABE00D9F6E3 /* MeowToggleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeowToggleTableViewCell.swift; sourceTree = "<group>"; };
+		6333BB121EF14AC600D9F6E3 /* MeowToggleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeowToggleTableViewCell.xib; sourceTree = "<group>"; };
+		6333BB141EF1669300D9F6E3 /* DefaultKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultKeys.swift; sourceTree = "<group>"; };
+		6333BB161EF167F100D9F6E3 /* SoundStoreService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundStoreService.swift; sourceTree = "<group>"; };
+		6333BB191EF27E4500D9F6E3 /* MeowNavigationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeowNavigationPresenter.swift; sourceTree = "<group>"; };
+		6333BB1B1EF27E4E00D9F6E3 /* MeowNavigationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeowNavigationRouter.swift; sourceTree = "<group>"; };
+		6333BB1D1EF27E5600D9F6E3 /* MeowNavigationInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeowNavigationInteractor.swift; sourceTree = "<group>"; };
+		6333BB1F1EF27ECF00D9F6E3 /* MeowNavigationBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeowNavigationBuilder.swift; sourceTree = "<group>"; };
+		6333BB211EF2903600D9F6E3 /* MeowNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeowNotification.swift; sourceTree = "<group>"; };
+		6342EAD01EDE5C03003AE3B9 /* InvoiceValidationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceValidationService.swift; sourceTree = "<group>"; };
+		6342EAD21EDE6085003AE3B9 /* Invoice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Invoice.swift; sourceTree = "<group>"; };
+		6342EAD41EDE60B5003AE3B9 /* ShortInvoice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortInvoice.swift; sourceTree = "<group>"; };
+		6342EADA1EDE6D33003AE3B9 /* InvoiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceSpec.swift; sourceTree = "<group>"; };
+		6342EADC1EDE7F86003AE3B9 /* ShortInvoiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortInvoiceSpec.swift; sourceTree = "<group>"; };
+		6342EADE1EDE826E003AE3B9 /* InvoiceAwardSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceAwardSpec.swift; sourceTree = "<group>"; };
+		6342EAE01EDE869D003AE3B9 /* DefaultInvoiceValidationServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultInvoiceValidationServiceSpec.swift; sourceTree = "<group>"; };
+		63439A4C1EF0E1F200CCBEEB /* KeyboardCheckerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardCheckerBuilder.swift; sourceTree = "<group>"; };
+		63439A4E1EF0E26900CCBEEB /* KeyboardCheckerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardCheckerPresenter.swift; sourceTree = "<group>"; };
+		63439A501EF0E2C700CCBEEB /* KeyboardCheckerInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardCheckerInteractor.swift; sourceTree = "<group>"; };
+		63439A531EF0E2F200CCBEEB /* KeyboardCheckerRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardCheckerRouter.swift; sourceTree = "<group>"; };
+		63439A561EF0F17C00CCBEEB /* MonthSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthSelectorViewController.swift; sourceTree = "<group>"; };
+		63517AB61EE0778C0014D9D5 /* ArraySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArraySpec.swift; sourceTree = "<group>"; };
+		63517AB81EE0FFFD0014D9D5 /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		63517AB91EE0FFFD0014D9D5 /* CollectionExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionExtension.swift; sourceTree = "<group>"; };
+		63517ABA1EE0FFFD0014D9D5 /* DataExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
+		63517ABB1EE0FFFD0014D9D5 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		63517ABC1EE0FFFD0014D9D5 /* NSObejctExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObejctExtension.swift; sourceTree = "<group>"; };
+		63517ABD1EE0FFFD0014D9D5 /* NumberExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberExtension.swift; sourceTree = "<group>"; };
+		63517ABE1EE0FFFD0014D9D5 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		63517AC01EE0FFFD0014D9D5 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		63517AC11EE0FFFD0014D9D5 /* SwiftyJSONExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSONExtension.swift; sourceTree = "<group>"; };
+		63517AC21EE0FFFD0014D9D5 /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtension.swift; sourceTree = "<group>"; };
+		63517AC31EE0FFFD0014D9D5 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
+		63517AC41EE0FFFD0014D9D5 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
+		63517AC51EE0FFFD0014D9D5 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		63517AC61EE0FFFD0014D9D5 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		63517AC71EE0FFFD0014D9D5 /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		63517AC81EE0FFFD0014D9D5 /* UITableViewExtensios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtensios.swift; sourceTree = "<group>"; };
+		63517AC91EE0FFFD0014D9D5 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		63517ACA1EE0FFFD0014D9D5 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		63517ADF1EE10FEC0014D9D5 /* QRCodeScannerInteractorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeScannerInteractorSpec.swift; sourceTree = "<group>"; };
+		63517AE11EE1164E0014D9D5 /* InvoiceAwardsStoreService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceAwardsStoreService.swift; sourceTree = "<group>"; };
+		63517AE41EE4078B0014D9D5 /* MeowNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeowNavigationBar.swift; sourceTree = "<group>"; };
+		63517AE61EE40A5B0014D9D5 /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		63517AE81EE40AC60014D9D5 /* MeowInvoiceColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeowInvoiceColor.swift; sourceTree = "<group>"; };
+		63606A9B1F1081C900E3F5B7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		63606A9D1F10850100E3F5B7 /* MeowInvoice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MeowInvoice.entitlements; sourceTree = "<group>"; };
+		63606A9E1F126C3500E3F5B7 /* AnalyticsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsHelper.swift; sourceTree = "<group>"; };
+		63606AA01F134AC100E3F5B7 /* NotificationSettingStoreService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSettingStoreService.swift; sourceTree = "<group>"; };
+		6363C4621F1F588F009448D0 /* ringtone_fail.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ringtone_fail.wav; sourceTree = "<group>"; };
+		6363C4631F1F588F009448D0 /* meow_fail.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = meow_fail.wav; sourceTree = "<group>"; };
+		6363C4641F1F588F009448D0 /* google_fail.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = google_fail.wav; sourceTree = "<group>"; };
+		636969C41EE4473F0047DD03 /* MeowNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeowNavigationController.swift; sourceTree = "<group>"; };
+		636969C71EE456310047DD03 /* MeowFrontPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeowFrontPageViewController.swift; sourceTree = "<group>"; };
+		636969CA1EE4F2360047DD03 /* CheckInvoiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInvoiceView.swift; sourceTree = "<group>"; };
+		636969CC1EE4F5CD0047DD03 /* InvoiceInformationCheckerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceInformationCheckerView.swift; sourceTree = "<group>"; };
+		636969CE1EE4FDA10047DD03 /* CircularCountdownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularCountdownView.swift; sourceTree = "<group>"; };
+		636969D11EE51FE40047DD03 /* KeyboardCheckerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardCheckerViewController.swift; sourceTree = "<group>"; };
+		636969D41EE5217A0047DD03 /* MeowKeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeowKeyboardView.swift; sourceTree = "<group>"; };
+		636969D61EE521EA0047DD03 /* MeowKeyboardKeyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeowKeyboardKeyView.swift; sourceTree = "<group>"; };
+		636969D81EE58D8D0047DD03 /* KeyboardInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardInputView.swift; sourceTree = "<group>"; };
+		636AD0BA1EF7E8320030DB0D /* HitTestExtendedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HitTestExtendedView.swift; sourceTree = "<group>"; };
+		636AD0BF1EF8FD4A0030DB0D /* KeyboardCheckerDefaultBuilderSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardCheckerDefaultBuilderSpec.swift; sourceTree = "<group>"; };
+		636AD0C11EF90D170030DB0D /* QRCodeInvoiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeInvoiceSpec.swift; sourceTree = "<group>"; };
+		636AD0C31EF919FC0030DB0D /* QRCodeScannerPresenterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeScannerPresenterSpec.swift; sourceTree = "<group>"; };
+		636AD0C61EF9215A0030DB0D /* InvoiceAwardsStoreServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceAwardsStoreServiceSpec.swift; sourceTree = "<group>"; };
+		636AD0C81EF93DB30030DB0D /* KeyboardCheckerDefaultInteractorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardCheckerDefaultInteractorSpec.swift; sourceTree = "<group>"; };
+		636AD0CA1EF93DBD0030DB0D /* KeyboardCheckerDefaultPresenterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardCheckerDefaultPresenterSpec.swift; sourceTree = "<group>"; };
+		63775B9E1F15CFF000E52065 /* fabric.apikey */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fabric.apikey; sourceTree = "<group>"; };
+		63775BA21F15DCAD00E52065 /* amplitude.apikey */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = amplitude.apikey; sourceTree = "<group>"; };
+		63775BA41F15DCB700E52065 /* admob.apikey */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = admob.apikey; sourceTree = "<group>"; };
+		63775BA61F15DCCF00E52065 /* SecretKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretKey.swift; sourceTree = "<group>"; };
+		637CA4751EE7DC25004F5ECE /* PreviewInvoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewInvoiceViewController.swift; sourceTree = "<group>"; };
+		637CA4771EE7DC67004F5ECE /* MeowPresentModallyNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeowPresentModallyNavigationBar.swift; sourceTree = "<group>"; };
+		637CA4791EE7ED1C004F5ECE /* InvoiceAwardsInformationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceAwardsInformationView.swift; sourceTree = "<group>"; };
+		637CA47C1EE7FEA7004F5ECE /* MeowFrontPageRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeowFrontPageRouter.swift; sourceTree = "<group>"; };
+		637CA47E1EE7FFAD004F5ECE /* VIPERRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIPERRouter.swift; sourceTree = "<group>"; };
+		63B76AC11EE6860700F6E1E1 /* ResultDisplayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultDisplayerView.swift; sourceTree = "<group>"; };
+		63B76AC41EE6897A00F6E1E1 /* CountDownService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountDownService.swift; sourceTree = "<group>"; };
+		63B76AC71EE6945000F6E1E1 /* CountDownServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountDownServiceSpec.swift; sourceTree = "<group>"; };
+		63B76AD11EE69D8100F6E1E1 /* MeowFrontPageBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeowFrontPageBuilder.swift; sourceTree = "<group>"; };
+		63B76AD31EE69DD000F6E1E1 /* MeowFrontPageInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeowFrontPageInteractor.swift; sourceTree = "<group>"; };
+		63B76AD51EE69FBF00F6E1E1 /* MeowFrontPagePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeowFrontPagePresenter.swift; sourceTree = "<group>"; };
+		63B76AD81EE6CABC00F6E1E1 /* QRCodeInvoiceValidatorService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeInvoiceValidatorService.swift; sourceTree = "<group>"; };
+		63BF64B31F166A8C00650A39 /* adUnitID.apikey */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = adUnitID.apikey; sourceTree = "<group>"; };
+		63E336E31EDFFFD400AEB06B /* InvoiceQRCodeScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceQRCodeScannerViewController.swift; sourceTree = "<group>"; };
+		63E336E91EE0009A00AEB06B /* InvoiceQRCodeScannerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceQRCodeScannerBuilder.swift; sourceTree = "<group>"; };
+		63E336EF1EE0024F00AEB06B /* InvoiceQRCodeScannerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceQRCodeScannerPresenter.swift; sourceTree = "<group>"; };
+		63E336F21EE0064E00AEB06B /* QRCodeScannerService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeScannerService.swift; sourceTree = "<group>"; };
+		63E336F71EE0272100AEB06B /* InvoiceQRCodeScannerInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceQRCodeScannerInteractor.swift; sourceTree = "<group>"; };
+		63E336FA1EE027C500AEB06B /* InvoiceQRCodeScannerRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceQRCodeScannerRouter.swift; sourceTree = "<group>"; };
+		63E336FD1EE028EE00AEB06B /* QRCodeDecoderService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeDecoderService.swift; sourceTree = "<group>"; };
+		63E336FF1EE0374300AEB06B /* QRCodeInvoice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeInvoice.swift; sourceTree = "<group>"; };
+		63E337061EE06D0C00AEB06B /* QRCodeDecoderServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeDecoderServiceSpec.swift; sourceTree = "<group>"; };
+		94A69F22A8047A3BC98AECAB /* Pods_MeowInvoiceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeowInvoiceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C323B2D9B83836CC51D96459 /* Pods-MeowInvoiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeowInvoiceTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeowInvoiceTests/Pods-MeowInvoiceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DF6A8C00382B811CA0D93F33 /* Pods-MeowInvoice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeowInvoice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeowInvoice/Pods-MeowInvoice.debug.xcconfig"; sourceTree = "<group>"; };
+		E81D8FABBF93169582466B78 /* Pods-MeowInvoice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeowInvoice.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeowInvoice/Pods-MeowInvoice.release.xcconfig"; sourceTree = "<group>"; };
+		F0485EFC7240F22DC2C20F29 /* Pods-MeowInvoiceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeowInvoiceUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeowInvoiceUITests/Pods-MeowInvoiceUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		630BDBAF1EDBBC2F00CA9BA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				545B81EC8EAE85FAEDA93867 /* Pods_MeowInvoice.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630BDBC31EDBBC2F00CA9BA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7667BF265EF1726BD9C5C2E /* Pods_MeowInvoiceTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630BDBCE1EDBBC2F00CA9BA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E4AE55409C7CC20E18B6A3 /* Pods_MeowInvoiceUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		630BDBA91EDBBC2F00CA9BA1 = {
+			isa = PBXGroup;
+			children = (
+				630BDBB41EDBBC2F00CA9BA1 /* MeowInvoice */,
+				630BDBC91EDBBC2F00CA9BA1 /* MeowInvoiceTests */,
+				630BDBD41EDBBC2F00CA9BA1 /* MeowInvoiceUITests */,
+				630BDBB31EDBBC2F00CA9BA1 /* Products */,
+				E0F56ACFEF3D12584E2977B1 /* Pods */,
+				D33221B39F1360BBC1E90295 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		630BDBB31EDBBC2F00CA9BA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				630BDBB21EDBBC2F00CA9BA1 /* MeowInvoice.app */,
+				630BDBC61EDBBC2F00CA9BA1 /* MeowInvoiceTests.xctest */,
+				630BDBD11EDBBC2F00CA9BA1 /* MeowInvoiceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		630BDBB41EDBBC2F00CA9BA1 /* MeowInvoice */ = {
+			isa = PBXGroup;
+			children = (
+				638AB92C1EF51CE8003094F0 /* Sound */,
+				6333BB141EF1669300D9F6E3 /* DefaultKeys.swift */,
+				6333BB211EF2903600D9F6E3 /* MeowNotification.swift */,
+				6333BB011EF13F1F00D9F6E3 /* More Option Page */,
+				63439A551EF0F15100CCBEEB /* Month Drop Down Selector View */,
+				637CA4741EE7DBFE004F5ECE /* Preview Invoice */,
+				636969D01EE51FB20047DD03 /* Keyboard Checker */,
+				636969C61EE456180047DD03 /* Front Page */,
+				6333BB181EF27E2800D9F6E3 /* Meow Navigation Controller */,
+				63517AE31EE407350014D9D5 /* MeowNavigationBar */,
+				63E336E21EDFFF7E00AEB06B /* QRCode */,
+				6342EACF1EDE5BF2003AE3B9 /* Model */,
+				630BDBE31EDBBF1100CA9BA1 /* Network */,
+				6342EAD61EDE652E003AE3B9 /* Extension */,
+				63606A9D1F10850100E3F5B7 /* MeowInvoice.entitlements */,
+				630BDBB51EDBBC2F00CA9BA1 /* AppDelegate.swift */,
+				6317F5441F1A03CE00F5BF4A /* Release.swift */,
+				63775BA61F15DCCF00E52065 /* SecretKey.swift */,
+				63BF64B31F166A8C00650A39 /* adUnitID.apikey */,
+				63775BA21F15DCAD00E52065 /* amplitude.apikey */,
+				6317F5461F1A07B800F5BF4A /* amplitude-dev.apikey */,
+				63775BA41F15DCB700E52065 /* admob.apikey */,
+				63775B9E1F15CFF000E52065 /* fabric.apikey */,
+				63606A9E1F126C3500E3F5B7 /* AnalyticsHelper.swift */,
+				630BDBE81EDBC10700CA9BA1 /* NetworkRequestConfig.swift */,
+				630BDBB71EDBBC2F00CA9BA1 /* ViewController.swift */,
+				63517AE81EE40AC60014D9D5 /* MeowInvoiceColor.swift */,
+				630BDBB91EDBBC2F00CA9BA1 /* Main.storyboard */,
+				630BDBBC1EDBBC2F00CA9BA1 /* Assets.xcassets */,
+				630BDBBE1EDBBC2F00CA9BA1 /* LaunchScreen.storyboard */,
+				630BDBC11EDBBC2F00CA9BA1 /* Info.plist */,
+				63606A9B1F1081C900E3F5B7 /* GoogleService-Info.plist */,
+				636AD0BA1EF7E8320030DB0D /* HitTestExtendedView.swift */,
+			);
+			path = MeowInvoice;
+			sourceTree = "<group>";
+		};
+		630BDBC91EDBBC2F00CA9BA1 /* MeowInvoiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				636AD0C51EF921420030DB0D /* InvoiceAwardsStoreService Spec */,
+				636AD0BE1EF8FCFC0030DB0D /* Keyboard Checker Spec */,
+				63B76AC61EE6943A00F6E1E1 /* CountDownSpec */,
+				63517ADE1EE10F7F0014D9D5 /* QRCodeScannerSpec */,
+				63517AB51EE077790014D9D5 /* ExtensionSpec */,
+				63E337051EE06CC000AEB06B /* QRCodeSpec */,
+				6342EAD91EDE6D17003AE3B9 /* InvoiceSpec */,
+				630BDBCA1EDBBC2F00CA9BA1 /* MeowInvoiceTests.swift */,
+				630BDBCC1EDBBC2F00CA9BA1 /* Info.plist */,
+			);
+			path = MeowInvoiceTests;
+			sourceTree = "<group>";
+		};
+		630BDBD41EDBBC2F00CA9BA1 /* MeowInvoiceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				630BDBD51EDBBC2F00CA9BA1 /* MeowInvoiceUITests.swift */,
+				630BDBD71EDBBC2F00CA9BA1 /* Info.plist */,
+			);
+			path = MeowInvoiceUITests;
+			sourceTree = "<group>";
+		};
+		630BDBE31EDBBF1100CA9BA1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				63E336DC1EDFE2A200AEB06B /* InvoiceService */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		6333BB011EF13F1F00D9F6E3 /* More Option Page */ = {
+			isa = PBXGroup;
+			children = (
+				6333BB101EF14ABE00D9F6E3 /* MeowToggleTableViewCell.swift */,
+				6333BB121EF14AC600D9F6E3 /* MeowToggleTableViewCell.xib */,
+				6333BB0E1EF146CC00D9F6E3 /* MeowCheckBoxTableViewCell.swift */,
+				6333BB0C1EF146AF00D9F6E3 /* MeowCheckBoxTableViewCell.xib */,
+				6333BB021EF13F3600D9F6E3 /* MeowMoreOptionViewController.swift */,
+				6333BB041EF1403900D9F6E3 /* MeowMoreOptionPresenter.swift */,
+				6333BB061EF1404A00D9F6E3 /* MeowMoreOptionRouter.swift */,
+				6333BB081EF1405600D9F6E3 /* MeowMoreOptionBuilder.swift */,
+				6333BB0A1EF1406400D9F6E3 /* MeowMoreOptionInteractor.swift */,
+				63606AA01F134AC100E3F5B7 /* NotificationSettingStoreService.swift */,
+				6333BB161EF167F100D9F6E3 /* SoundStoreService.swift */,
+			);
+			name = "More Option Page";
+			sourceTree = "<group>";
+		};
+		6333BB181EF27E2800D9F6E3 /* Meow Navigation Controller */ = {
+			isa = PBXGroup;
+			children = (
+				636969C41EE4473F0047DD03 /* MeowNavigationController.swift */,
+				6333BB191EF27E4500D9F6E3 /* MeowNavigationPresenter.swift */,
+				6333BB1B1EF27E4E00D9F6E3 /* MeowNavigationRouter.swift */,
+				6333BB1D1EF27E5600D9F6E3 /* MeowNavigationInteractor.swift */,
+				6333BB1F1EF27ECF00D9F6E3 /* MeowNavigationBuilder.swift */,
+				631D9A081F0DE01E0045425D /* MeowNavigationTransitioningDelegate.swift */,
+			);
+			name = "Meow Navigation Controller";
+			sourceTree = "<group>";
+		};
+		6342EACF1EDE5BF2003AE3B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6342EAD21EDE6085003AE3B9 /* Invoice.swift */,
+				6342EAD41EDE60B5003AE3B9 /* ShortInvoice.swift */,
+				6342EAD01EDE5C03003AE3B9 /* InvoiceValidationService.swift */,
+				6333BAFF1EF129CB00D9F6E3 /* ShortInvoiceValidationService.swift */,
+				63517AE11EE1164E0014D9D5 /* InvoiceAwardsStoreService.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6342EAD61EDE652E003AE3B9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				637CA47E1EE7FFAD004F5ECE /* VIPERRouter.swift */,
+				63517AB81EE0FFFD0014D9D5 /* ArrayExtension.swift */,
+				63517AB91EE0FFFD0014D9D5 /* CollectionExtension.swift */,
+				63517ABA1EE0FFFD0014D9D5 /* DataExtension.swift */,
+				63517ABB1EE0FFFD0014D9D5 /* DateExtension.swift */,
+				63517ABC1EE0FFFD0014D9D5 /* NSObejctExtension.swift */,
+				63517ABD1EE0FFFD0014D9D5 /* NumberExtension.swift */,
+				63517ABE1EE0FFFD0014D9D5 /* Queue.swift */,
+				63517AC01EE0FFFD0014D9D5 /* StringExtension.swift */,
+				63517AC11EE0FFFD0014D9D5 /* SwiftyJSONExtension.swift */,
+				63517AC21EE0FFFD0014D9D5 /* UIAlertControllerExtension.swift */,
+				63517AC31EE0FFFD0014D9D5 /* UIApplicationExtension.swift */,
+				63517AC41EE0FFFD0014D9D5 /* UICollectionViewExtension.swift */,
+				63517AC51EE0FFFD0014D9D5 /* UIColorExtension.swift */,
+				63517AC61EE0FFFD0014D9D5 /* UIImageExtension.swift */,
+				63517AC71EE0FFFD0014D9D5 /* UILabelExtension.swift */,
+				63517AC81EE0FFFD0014D9D5 /* UITableViewExtensios.swift */,
+				63517AC91EE0FFFD0014D9D5 /* UIViewControllerExtension.swift */,
+				63517ACA1EE0FFFD0014D9D5 /* UIViewExtension.swift */,
+				63517AE61EE40A5B0014D9D5 /* UIButtonExtension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		6342EAD91EDE6D17003AE3B9 /* InvoiceSpec */ = {
+			isa = PBXGroup;
+			children = (
+				6342EADA1EDE6D33003AE3B9 /* InvoiceSpec.swift */,
+				6342EADC1EDE7F86003AE3B9 /* ShortInvoiceSpec.swift */,
+				6342EADE1EDE826E003AE3B9 /* InvoiceAwardSpec.swift */,
+				6342EAE01EDE869D003AE3B9 /* DefaultInvoiceValidationServiceSpec.swift */,
+			);
+			name = InvoiceSpec;
+			sourceTree = "<group>";
+		};
+		63439A521EF0E2E800CCBEEB /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				63439A531EF0E2F200CCBEEB /* KeyboardCheckerRouter.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		63439A551EF0F15100CCBEEB /* Month Drop Down Selector View */ = {
+			isa = PBXGroup;
+			children = (
+				63439A561EF0F17C00CCBEEB /* MonthSelectorViewController.swift */,
+				6333BAFD1EF0F22C00D9F6E3 /* MonthDropDownSelectorView.swift */,
+			);
+			name = "Month Drop Down Selector View";
+			sourceTree = "<group>";
+		};
+		63517AB51EE077790014D9D5 /* ExtensionSpec */ = {
+			isa = PBXGroup;
+			children = (
+				63517AB61EE0778C0014D9D5 /* ArraySpec.swift */,
+			);
+			name = ExtensionSpec;
+			sourceTree = "<group>";
+		};
+		63517ADE1EE10F7F0014D9D5 /* QRCodeScannerSpec */ = {
+			isa = PBXGroup;
+			children = (
+				63517ADF1EE10FEC0014D9D5 /* QRCodeScannerInteractorSpec.swift */,
+				636AD0C31EF919FC0030DB0D /* QRCodeScannerPresenterSpec.swift */,
+			);
+			name = QRCodeScannerSpec;
+			sourceTree = "<group>";
+		};
+		63517AE31EE407350014D9D5 /* MeowNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				63517AE41EE4078B0014D9D5 /* MeowNavigationBar.swift */,
+			);
+			name = MeowNavigationBar;
+			sourceTree = "<group>";
+		};
+		636969C61EE456180047DD03 /* Front Page */ = {
+			isa = PBXGroup;
+			children = (
+				637CA47B1EE7FE97004F5ECE /* Router */,
+				63B76AD01EE69D5500F6E1E1 /* Interactor */,
+				63B76ACF1EE69D4E00F6E1E1 /* Presenter */,
+				63B76ACD1EE69D4100F6E1E1 /* Builder */,
+				63B76AC31EE6896E00F6E1E1 /* Service */,
+				636969C91EE4F18D0047DD03 /* Views */,
+				636969C71EE456310047DD03 /* MeowFrontPageViewController.swift */,
+			);
+			name = "Front Page";
+			sourceTree = "<group>";
+		};
+		636969C91EE4F18D0047DD03 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				636969CA1EE4F2360047DD03 /* CheckInvoiceView.swift */,
+				636969CC1EE4F5CD0047DD03 /* InvoiceInformationCheckerView.swift */,
+				636969CE1EE4FDA10047DD03 /* CircularCountdownView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		636969D01EE51FB20047DD03 /* Keyboard Checker */ = {
+			isa = PBXGroup;
+			children = (
+				63439A521EF0E2E800CCBEEB /* Router */,
+				63B76ACC1EE69D1900F6E1E1 /* Interactor */,
+				63B76ACB1EE69D0A00F6E1E1 /* Presenter */,
+				63B76ACA1EE69CEF00F6E1E1 /* Builder */,
+				63B76AC91EE69CD400F6E1E1 /* View */,
+			);
+			name = "Keyboard Checker";
+			sourceTree = "<group>";
+		};
+		636969D31EE521620047DD03 /* Keyboard View */ = {
+			isa = PBXGroup;
+			children = (
+				636969D41EE5217A0047DD03 /* MeowKeyboardView.swift */,
+				636969D61EE521EA0047DD03 /* MeowKeyboardKeyView.swift */,
+			);
+			name = "Keyboard View";
+			sourceTree = "<group>";
+		};
+		636AD0BE1EF8FCFC0030DB0D /* Keyboard Checker Spec */ = {
+			isa = PBXGroup;
+			children = (
+				636AD0BF1EF8FD4A0030DB0D /* KeyboardCheckerDefaultBuilderSpec.swift */,
+				636AD0C81EF93DB30030DB0D /* KeyboardCheckerDefaultInteractorSpec.swift */,
+				636AD0CA1EF93DBD0030DB0D /* KeyboardCheckerDefaultPresenterSpec.swift */,
+			);
+			name = "Keyboard Checker Spec";
+			sourceTree = "<group>";
+		};
+		636AD0C51EF921420030DB0D /* InvoiceAwardsStoreService Spec */ = {
+			isa = PBXGroup;
+			children = (
+				636AD0C61EF9215A0030DB0D /* InvoiceAwardsStoreServiceSpec.swift */,
+			);
+			name = "InvoiceAwardsStoreService Spec";
+			sourceTree = "<group>";
+		};
+		637CA4741EE7DBFE004F5ECE /* Preview Invoice */ = {
+			isa = PBXGroup;
+			children = (
+				637CA4751EE7DC25004F5ECE /* PreviewInvoiceViewController.swift */,
+				637CA4791EE7ED1C004F5ECE /* InvoiceAwardsInformationView.swift */,
+				637CA4771EE7DC67004F5ECE /* MeowPresentModallyNavigationBar.swift */,
+			);
+			name = "Preview Invoice";
+			sourceTree = "<group>";
+		};
+		637CA47B1EE7FE97004F5ECE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				637CA47C1EE7FEA7004F5ECE /* MeowFrontPageRouter.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		638AB92C1EF51CE8003094F0 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				6328F9581F1611BB00CA6B0C /* google_win.wav */,
+				6328F9651F1612C600CA6B0C /* meow_win.wav */,
+				6328F9661F1612C600CA6B0C /* ringtone_win.wav */,
+				6328F95C1F1611BB00CA6B0C /* tick.wav */,
+				6328F9691F16134100CA6B0C /* error.wav */,
+				6363C4621F1F588F009448D0 /* ringtone_fail.wav */,
+				6363C4631F1F588F009448D0 /* meow_fail.wav */,
+				6363C4641F1F588F009448D0 /* google_fail.wav */,
+				6328F9521F160D8900CA6B0C /* MeowSound.swift */,
+			);
+			name = Sound;
+			sourceTree = "<group>";
+		};
+		63B76AC31EE6896E00F6E1E1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				63B76AC41EE6897A00F6E1E1 /* CountDownService.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		63B76AC61EE6943A00F6E1E1 /* CountDownSpec */ = {
+			isa = PBXGroup;
+			children = (
+				63B76AC71EE6945000F6E1E1 /* CountDownServiceSpec.swift */,
+			);
+			name = CountDownSpec;
+			sourceTree = "<group>";
+		};
+		63B76AC91EE69CD400F6E1E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				636969D11EE51FE40047DD03 /* KeyboardCheckerViewController.swift */,
+				63B76AC11EE6860700F6E1E1 /* ResultDisplayerView.swift */,
+				636969D81EE58D8D0047DD03 /* KeyboardInputView.swift */,
+				636969D31EE521620047DD03 /* Keyboard View */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		63B76ACA1EE69CEF00F6E1E1 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				63439A4C1EF0E1F200CCBEEB /* KeyboardCheckerBuilder.swift */,
+			);
+			name = Builder;
+			sourceTree = "<group>";
+		};
+		63B76ACB1EE69D0A00F6E1E1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				63439A4E1EF0E26900CCBEEB /* KeyboardCheckerPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		63B76ACC1EE69D1900F6E1E1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				63439A501EF0E2C700CCBEEB /* KeyboardCheckerInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		63B76ACD1EE69D4100F6E1E1 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				63B76AD11EE69D8100F6E1E1 /* MeowFrontPageBuilder.swift */,
+			);
+			name = Builder;
+			sourceTree = "<group>";
+		};
+		63B76ACF1EE69D4E00F6E1E1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				63B76AD51EE69FBF00F6E1E1 /* MeowFrontPagePresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		63B76AD01EE69D5500F6E1E1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				63B76AD31EE69DD000F6E1E1 /* MeowFrontPageInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		63B76AD71EE6CAA700F6E1E1 /* QRCodeInvoiceValidatorService */ = {
+			isa = PBXGroup;
+			children = (
+				63B76AD81EE6CABC00F6E1E1 /* QRCodeInvoiceValidatorService.swift */,
+			);
+			name = QRCodeInvoiceValidatorService;
+			sourceTree = "<group>";
+		};
+		63E336DC1EDFE2A200AEB06B /* InvoiceService */ = {
+			isa = PBXGroup;
+			children = (
+				630BDBE41EDBBF2400CA9BA1 /* FetchInvoiceAwards.swift */,
+				63E336DD1EDFE3BC00AEB06B /* Model */,
+			);
+			name = InvoiceService;
+			sourceTree = "<group>";
+		};
+		63E336DD1EDFE3BC00AEB06B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				630BDBE61EDBBF3F00CA9BA1 /* InvoiceAwards.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		63E336E21EDFFF7E00AEB06B /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				63B76AD71EE6CAA700F6E1E1 /* QRCodeInvoiceValidatorService */,
+				63E336FC1EE028DA00AEB06B /* QRCodeDecoderService */,
+				63E336F91EE027B300AEB06B /* Router */,
+				63E336F11EE0062D00AEB06B /* QRCodeScannerService */,
+				63E336F61EE026FE00AEB06B /* Interactor */,
+				63E336EE1EE001AF00AEB06B /* View */,
+				63E336EB1EE0014000AEB06B /* Presenter */,
+				63E336E51EDFFFFC00AEB06B /* Builder */,
+			);
+			name = QRCode;
+			sourceTree = "<group>";
+		};
+		63E336E51EDFFFFC00AEB06B /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				63E336E91EE0009A00AEB06B /* InvoiceQRCodeScannerBuilder.swift */,
+			);
+			name = Builder;
+			sourceTree = "<group>";
+		};
+		63E336EB1EE0014000AEB06B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				63E336EF1EE0024F00AEB06B /* InvoiceQRCodeScannerPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		63E336EE1EE001AF00AEB06B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63E336E31EDFFFD400AEB06B /* InvoiceQRCodeScannerViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		63E336F11EE0062D00AEB06B /* QRCodeScannerService */ = {
+			isa = PBXGroup;
+			children = (
+				63E336F21EE0064E00AEB06B /* QRCodeScannerService.swift */,
+			);
+			name = QRCodeScannerService;
+			sourceTree = "<group>";
+		};
+		63E336F61EE026FE00AEB06B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				63E336F71EE0272100AEB06B /* InvoiceQRCodeScannerInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		63E336F91EE027B300AEB06B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				63E336FA1EE027C500AEB06B /* InvoiceQRCodeScannerRouter.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		63E336FC1EE028DA00AEB06B /* QRCodeDecoderService */ = {
+			isa = PBXGroup;
+			children = (
+				63E336FD1EE028EE00AEB06B /* QRCodeDecoderService.swift */,
+				63E336FF1EE0374300AEB06B /* QRCodeInvoice.swift */,
+			);
+			name = QRCodeDecoderService;
+			sourceTree = "<group>";
+		};
+		63E337051EE06CC000AEB06B /* QRCodeSpec */ = {
+			isa = PBXGroup;
+			children = (
+				63E337061EE06D0C00AEB06B /* QRCodeDecoderServiceSpec.swift */,
+				636AD0C11EF90D170030DB0D /* QRCodeInvoiceSpec.swift */,
+			);
+			name = QRCodeSpec;
+			sourceTree = "<group>";
+		};
+		D33221B39F1360BBC1E90295 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48899BC65C2563EB7DF96CEC /* Pods_MeowInvoice.framework */,
+				94A69F22A8047A3BC98AECAB /* Pods_MeowInvoiceTests.framework */,
+				3F9F18684D61B4C2ACF3DCA8 /* Pods_MeowInvoiceUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0F56ACFEF3D12584E2977B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF6A8C00382B811CA0D93F33 /* Pods-MeowInvoice.debug.xcconfig */,
+				E81D8FABBF93169582466B78 /* Pods-MeowInvoice.release.xcconfig */,
+				C323B2D9B83836CC51D96459 /* Pods-MeowInvoiceTests.debug.xcconfig */,
+				0EDC5AF80B2751E5A95D9CAE /* Pods-MeowInvoiceTests.release.xcconfig */,
+				37FEAE4123FADDC5A8DDAF8D /* Pods-MeowInvoiceUITests.debug.xcconfig */,
+				F0485EFC7240F22DC2C20F29 /* Pods-MeowInvoiceUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		630BDBB11EDBBC2F00CA9BA1 /* MeowInvoice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 630BDBDA1EDBBC2F00CA9BA1 /* Build configuration list for PBXNativeTarget "MeowInvoice" */;
+			buildPhases = (
+				A7CD98C19888010BF53871A7 /* [CP] Check Pods Manifest.lock */,
+				630BDBAE1EDBBC2F00CA9BA1 /* Sources */,
+				630BDBAF1EDBBC2F00CA9BA1 /* Frameworks */,
+				630BDBB01EDBBC2F00CA9BA1 /* Resources */,
+				E4877887F9216BCEB96A4E97 /* [CP] Embed Pods Frameworks */,
+				0DADDE96F1F4E0513EE4E96D /* [CP] Copy Pods Resources */,
+				63E336DB1EDFDFBC00AEB06B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeowInvoice;
+			productName = MeowInvoice;
+			productReference = 630BDBB21EDBBC2F00CA9BA1 /* MeowInvoice.app */;
+			productType = "com.apple.product-type.application";
+		};
+		630BDBC51EDBBC2F00CA9BA1 /* MeowInvoiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 630BDBDD1EDBBC2F00CA9BA1 /* Build configuration list for PBXNativeTarget "MeowInvoiceTests" */;
+			buildPhases = (
+				84C3916358281C04C9ED4681 /* [CP] Check Pods Manifest.lock */,
+				630BDBC21EDBBC2F00CA9BA1 /* Sources */,
+				630BDBC31EDBBC2F00CA9BA1 /* Frameworks */,
+				630BDBC41EDBBC2F00CA9BA1 /* Resources */,
+				920EA50A9762D48F05F20EA7 /* [CP] Embed Pods Frameworks */,
+				089070A622B65147EAD3034D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				630BDBC81EDBBC2F00CA9BA1 /* PBXTargetDependency */,
+			);
+			name = MeowInvoiceTests;
+			productName = MeowInvoiceTests;
+			productReference = 630BDBC61EDBBC2F00CA9BA1 /* MeowInvoiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		630BDBD01EDBBC2F00CA9BA1 /* MeowInvoiceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 630BDBE01EDBBC2F00CA9BA1 /* Build configuration list for PBXNativeTarget "MeowInvoiceUITests" */;
+			buildPhases = (
+				37069C37D835033CBDFCBC2A /* [CP] Check Pods Manifest.lock */,
+				630BDBCD1EDBBC2F00CA9BA1 /* Sources */,
+				630BDBCE1EDBBC2F00CA9BA1 /* Frameworks */,
+				630BDBCF1EDBBC2F00CA9BA1 /* Resources */,
+				DC5A7F597845BD6C6FE93A92 /* [CP] Embed Pods Frameworks */,
+				ECA7F52BCE19D77FE4CD1C74 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				630BDBD31EDBBC2F00CA9BA1 /* PBXTargetDependency */,
+			);
+			name = MeowInvoiceUITests;
+			productName = MeowInvoiceUITests;
+			productReference = 630BDBD11EDBBC2F00CA9BA1 /* MeowInvoiceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		630BDBAA1EDBBC2F00CA9BA1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = david;
+				TargetAttributes = {
+					630BDBB11EDBBC2F00CA9BA1 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = UA35L9FR9N;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					630BDBC51EDBBC2F00CA9BA1 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 630BDBB11EDBBC2F00CA9BA1;
+					};
+					630BDBD01EDBBC2F00CA9BA1 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 630BDBB11EDBBC2F00CA9BA1;
+					};
+				};
+			};
+			buildConfigurationList = 630BDBAD1EDBBC2F00CA9BA1 /* Build configuration list for PBXProject "MeowInvoice" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 630BDBA91EDBBC2F00CA9BA1;
+			productRefGroup = 630BDBB31EDBBC2F00CA9BA1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				630BDBB11EDBBC2F00CA9BA1 /* MeowInvoice */,
+				630BDBC51EDBBC2F00CA9BA1 /* MeowInvoiceTests */,
+				630BDBD01EDBBC2F00CA9BA1 /* MeowInvoiceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		630BDBB01EDBBC2F00CA9BA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63775BA51F15DCB700E52065 /* admob.apikey in Resources */,
+				63775B9F1F15CFF000E52065 /* fabric.apikey in Resources */,
+				6333BB0D1EF146AF00D9F6E3 /* MeowCheckBoxTableViewCell.xib in Resources */,
+				63BF64B41F166A8C00650A39 /* adUnitID.apikey in Resources */,
+				630BDBC01EDBBC2F00CA9BA1 /* LaunchScreen.storyboard in Resources */,
+				6363C4671F1F588F009448D0 /* google_fail.wav in Resources */,
+				630BDBBD1EDBBC2F00CA9BA1 /* Assets.xcassets in Resources */,
+				630BDBBB1EDBBC2F00CA9BA1 /* Main.storyboard in Resources */,
+				6328F9671F1612C600CA6B0C /* meow_win.wav in Resources */,
+				6333BB131EF14AC600D9F6E3 /* MeowToggleTableViewCell.xib in Resources */,
+				6328F9681F1612C600CA6B0C /* ringtone_win.wav in Resources */,
+				6363C4661F1F588F009448D0 /* meow_fail.wav in Resources */,
+				63775BA31F15DCAD00E52065 /* amplitude.apikey in Resources */,
+				6328F9641F1611BB00CA6B0C /* tick.wav in Resources */,
+				6328F9601F1611BB00CA6B0C /* google_win.wav in Resources */,
+				63606A9C1F1081C900E3F5B7 /* GoogleService-Info.plist in Resources */,
+				6363C4651F1F588F009448D0 /* ringtone_fail.wav in Resources */,
+				6317F5471F1A07B800F5BF4A /* amplitude-dev.apikey in Resources */,
+				6328F96A1F16134100CA6B0C /* error.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630BDBC41EDBBC2F00CA9BA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630BDBCF1EDBBC2F00CA9BA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		089070A622B65147EAD3034D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeowInvoiceTests/Pods-MeowInvoiceTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0DADDE96F1F4E0513EE4E96D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeowInvoice/Pods-MeowInvoice-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37069C37D835033CBDFCBC2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		63E336DB1EDFDFBC00AEB06B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FABRIC_APIKEY_FILE=\"${SRCROOT}/MeowInvoice/fabric.apikey\"\nFABRIC_BUILDSECRET_FILE=\"${SRCROOT}/MeowInvoice/fabric.buildsecret\"\necho \"$FABRIC_APIKEY_FILE\"\nif test ! -f \"$FABRIC_APIKEY_FILE\" -o ! -f \"$FABRIC_BUILDSECRET_FILE\"; then\n# Let the build fail\nexit 100\nfi\n\nFABRIC_APIKEY=$(cat \"$FABRIC_APIKEY_FILE\")\nif test $? -ne 0; then\necho \"Cannot read $FABRIC_APIKEY_FILE\"\nexit 1\nfi\n\nFABRIC_BUILDSECRET=$(cat \"$FABRIC_BUILDSECRET_FILE\")\nif test $? -ne 0; then\necho \"Cannot read $FABRIC_BUILDSECRET_FILE\"\nexit 1\nfi\n\necho \"Uploading dSYM files to Crashlytics\"\n\"${PODS_ROOT}/Fabric/run\" \"$FABRIC_APIKEY\" \"$FABRIC_BUILDSECRET\"";
+		};
+		84C3916358281C04C9ED4681 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		920EA50A9762D48F05F20EA7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeowInvoiceTests/Pods-MeowInvoiceTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7CD98C19888010BF53871A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DC5A7F597845BD6C6FE93A92 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeowInvoiceUITests/Pods-MeowInvoiceUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4877887F9216BCEB96A4E97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeowInvoice/Pods-MeowInvoice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECA7F52BCE19D77FE4CD1C74 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeowInvoiceUITests/Pods-MeowInvoiceUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		630BDBAE1EDBBC2F00CA9BA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630BDBB81EDBBC2F00CA9BA1 /* ViewController.swift in Sources */,
+				637CA47D1EE7FEA7004F5ECE /* MeowFrontPageRouter.swift in Sources */,
+				63B76AD91EE6CABC00F6E1E1 /* QRCodeInvoiceValidatorService.swift in Sources */,
+				636969D71EE521EA0047DD03 /* MeowKeyboardKeyView.swift in Sources */,
+				6333BB031EF13F3600D9F6E3 /* MeowMoreOptionViewController.swift in Sources */,
+				63B76AD21EE69D8100F6E1E1 /* MeowFrontPageBuilder.swift in Sources */,
+				630BDBE71EDBBF3F00CA9BA1 /* InvoiceAwards.swift in Sources */,
+				63B76AC21EE6860700F6E1E1 /* ResultDisplayerView.swift in Sources */,
+				6333BAFE1EF0F22C00D9F6E3 /* MonthDropDownSelectorView.swift in Sources */,
+				63E336FB1EE027C500AEB06B /* InvoiceQRCodeScannerRouter.swift in Sources */,
+				63517ACD1EE0FFFD0014D9D5 /* DataExtension.swift in Sources */,
+				6342EAD51EDE60B5003AE3B9 /* ShortInvoice.swift in Sources */,
+				6342EAD11EDE5C03003AE3B9 /* InvoiceValidationService.swift in Sources */,
+				63E336F81EE0272100AEB06B /* InvoiceQRCodeScannerInteractor.swift in Sources */,
+				63B76AC51EE6897A00F6E1E1 /* CountDownService.swift in Sources */,
+				6333BB001EF129CB00D9F6E3 /* ShortInvoiceValidationService.swift in Sources */,
+				6333BB151EF1669300D9F6E3 /* DefaultKeys.swift in Sources */,
+				63517AE71EE40A5B0014D9D5 /* UIButtonExtension.swift in Sources */,
+				6333BB051EF1403900D9F6E3 /* MeowMoreOptionPresenter.swift in Sources */,
+				636969CD1EE4F5CD0047DD03 /* InvoiceInformationCheckerView.swift in Sources */,
+				6333BB201EF27ECF00D9F6E3 /* MeowNavigationBuilder.swift in Sources */,
+				637CA4761EE7DC25004F5ECE /* PreviewInvoiceViewController.swift in Sources */,
+				6317F5451F1A03CE00F5BF4A /* Release.swift in Sources */,
+				63517AD81EE0FFFD0014D9D5 /* UIColorExtension.swift in Sources */,
+				63439A571EF0F17C00CCBEEB /* MonthSelectorViewController.swift in Sources */,
+				6333BB1E1EF27E5600D9F6E3 /* MeowNavigationInteractor.swift in Sources */,
+				636969CB1EE4F2360047DD03 /* CheckInvoiceView.swift in Sources */,
+				63517AD41EE0FFFD0014D9D5 /* SwiftyJSONExtension.swift in Sources */,
+				63517AD31EE0FFFD0014D9D5 /* StringExtension.swift in Sources */,
+				63B76AD41EE69DD000F6E1E1 /* MeowFrontPageInteractor.swift in Sources */,
+				6333BB111EF14ABE00D9F6E3 /* MeowToggleTableViewCell.swift in Sources */,
+				637CA47A1EE7ED1C004F5ECE /* InvoiceAwardsInformationView.swift in Sources */,
+				637CA47F1EE7FFAD004F5ECE /* VIPERRouter.swift in Sources */,
+				637CA4781EE7DC67004F5ECE /* MeowPresentModallyNavigationBar.swift in Sources */,
+				6342EAD31EDE6085003AE3B9 /* Invoice.swift in Sources */,
+				63517ACC1EE0FFFD0014D9D5 /* CollectionExtension.swift in Sources */,
+				63E336F01EE0024F00AEB06B /* InvoiceQRCodeScannerPresenter.swift in Sources */,
+				63517AD61EE0FFFD0014D9D5 /* UIApplicationExtension.swift in Sources */,
+				6333BB071EF1404A00D9F6E3 /* MeowMoreOptionRouter.swift in Sources */,
+				63439A541EF0E2F200CCBEEB /* KeyboardCheckerRouter.swift in Sources */,
+				63606A9F1F126C3500E3F5B7 /* AnalyticsHelper.swift in Sources */,
+				636969C51EE4473F0047DD03 /* MeowNavigationController.swift in Sources */,
+				63439A4D1EF0E1F200CCBEEB /* KeyboardCheckerBuilder.swift in Sources */,
+				6333BB1A1EF27E4500D9F6E3 /* MeowNavigationPresenter.swift in Sources */,
+				631D9A091F0DE01E0045425D /* MeowNavigationTransitioningDelegate.swift in Sources */,
+				63517AD51EE0FFFD0014D9D5 /* UIAlertControllerExtension.swift in Sources */,
+				63606AA11F134AC100E3F5B7 /* NotificationSettingStoreService.swift in Sources */,
+				636969D91EE58D8D0047DD03 /* KeyboardInputView.swift in Sources */,
+				6333BB0B1EF1406400D9F6E3 /* MeowMoreOptionInteractor.swift in Sources */,
+				636AD0BB1EF7E8320030DB0D /* HitTestExtendedView.swift in Sources */,
+				63E337001EE0374300AEB06B /* QRCodeInvoice.swift in Sources */,
+				63B76AD61EE69FBF00F6E1E1 /* MeowFrontPagePresenter.swift in Sources */,
+				63517AE51EE4078B0014D9D5 /* MeowNavigationBar.swift in Sources */,
+				63E336E41EDFFFD400AEB06B /* InvoiceQRCodeScannerViewController.swift in Sources */,
+				63439A511EF0E2C700CCBEEB /* KeyboardCheckerInteractor.swift in Sources */,
+				636969C81EE456310047DD03 /* MeowFrontPageViewController.swift in Sources */,
+				63517AD91EE0FFFD0014D9D5 /* UIImageExtension.swift in Sources */,
+				63517ACE1EE0FFFD0014D9D5 /* DateExtension.swift in Sources */,
+				63E336EA1EE0009A00AEB06B /* InvoiceQRCodeScannerBuilder.swift in Sources */,
+				63E336FE1EE028EE00AEB06B /* QRCodeDecoderService.swift in Sources */,
+				6328F9531F160D8900CA6B0C /* MeowSound.swift in Sources */,
+				63517AD11EE0FFFD0014D9D5 /* Queue.swift in Sources */,
+				636969D21EE51FE40047DD03 /* KeyboardCheckerViewController.swift in Sources */,
+				63517ADC1EE0FFFD0014D9D5 /* UIViewControllerExtension.swift in Sources */,
+				6333BB0F1EF146CC00D9F6E3 /* MeowCheckBoxTableViewCell.swift in Sources */,
+				63439A4F1EF0E26900CCBEEB /* KeyboardCheckerPresenter.swift in Sources */,
+				63517ADB1EE0FFFD0014D9D5 /* UITableViewExtensios.swift in Sources */,
+				636969CF1EE4FDA10047DD03 /* CircularCountdownView.swift in Sources */,
+				630BDBE51EDBBF2400CA9BA1 /* FetchInvoiceAwards.swift in Sources */,
+				63517ACB1EE0FFFD0014D9D5 /* ArrayExtension.swift in Sources */,
+				6333BB221EF2903600D9F6E3 /* MeowNotification.swift in Sources */,
+				63517AD01EE0FFFD0014D9D5 /* NumberExtension.swift in Sources */,
+				6333BB1C1EF27E4E00D9F6E3 /* MeowNavigationRouter.swift in Sources */,
+				630BDBE91EDBC10700CA9BA1 /* NetworkRequestConfig.swift in Sources */,
+				6333BB171EF167F100D9F6E3 /* SoundStoreService.swift in Sources */,
+				63517ADD1EE0FFFD0014D9D5 /* UIViewExtension.swift in Sources */,
+				6333BB091EF1405600D9F6E3 /* MeowMoreOptionBuilder.swift in Sources */,
+				63775BA71F15DCCF00E52065 /* SecretKey.swift in Sources */,
+				63517AE21EE1164E0014D9D5 /* InvoiceAwardsStoreService.swift in Sources */,
+				636969D51EE5217A0047DD03 /* MeowKeyboardView.swift in Sources */,
+				63517AD71EE0FFFD0014D9D5 /* UICollectionViewExtension.swift in Sources */,
+				63E336F31EE0064E00AEB06B /* QRCodeScannerService.swift in Sources */,
+				63517ADA1EE0FFFD0014D9D5 /* UILabelExtension.swift in Sources */,
+				63517AE91EE40AC60014D9D5 /* MeowInvoiceColor.swift in Sources */,
+				630BDBB61EDBBC2F00CA9BA1 /* AppDelegate.swift in Sources */,
+				63517ACF1EE0FFFD0014D9D5 /* NSObejctExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630BDBC21EDBBC2F00CA9BA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6342EADF1EDE826E003AE3B9 /* InvoiceAwardSpec.swift in Sources */,
+				636AD0CB1EF93DBD0030DB0D /* KeyboardCheckerDefaultPresenterSpec.swift in Sources */,
+				6342EAE11EDE869D003AE3B9 /* DefaultInvoiceValidationServiceSpec.swift in Sources */,
+				6342EADB1EDE6D33003AE3B9 /* InvoiceSpec.swift in Sources */,
+				63E337071EE06D0C00AEB06B /* QRCodeDecoderServiceSpec.swift in Sources */,
+				636AD0C41EF919FC0030DB0D /* QRCodeScannerPresenterSpec.swift in Sources */,
+				6342EADD1EDE7F86003AE3B9 /* ShortInvoiceSpec.swift in Sources */,
+				630BDBCB1EDBBC2F00CA9BA1 /* MeowInvoiceTests.swift in Sources */,
+				63517AE01EE10FEC0014D9D5 /* QRCodeScannerInteractorSpec.swift in Sources */,
+				636AD0C01EF8FD4A0030DB0D /* KeyboardCheckerDefaultBuilderSpec.swift in Sources */,
+				636AD0C71EF9215A0030DB0D /* InvoiceAwardsStoreServiceSpec.swift in Sources */,
+				63B76AC81EE6945000F6E1E1 /* CountDownServiceSpec.swift in Sources */,
+				636AD0C21EF90D170030DB0D /* QRCodeInvoiceSpec.swift in Sources */,
+				636AD0C91EF93DB30030DB0D /* KeyboardCheckerDefaultInteractorSpec.swift in Sources */,
+				63517AB71EE0778C0014D9D5 /* ArraySpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630BDBCD1EDBBC2F00CA9BA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630BDBD61EDBBC2F00CA9BA1 /* MeowInvoiceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		630BDBC81EDBBC2F00CA9BA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 630BDBB11EDBBC2F00CA9BA1 /* MeowInvoice */;
+			targetProxy = 630BDBC71EDBBC2F00CA9BA1 /* PBXContainerItemProxy */;
+		};
+		630BDBD31EDBBC2F00CA9BA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 630BDBB11EDBBC2F00CA9BA1 /* MeowInvoice */;
+			targetProxy = 630BDBD21EDBBC2F00CA9BA1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		630BDBB91EDBBC2F00CA9BA1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				630BDBBA1EDBBC2F00CA9BA1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		630BDBBE1EDBBC2F00CA9BA1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				630BDBBF1EDBBC2F00CA9BA1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		630BDBD81EDBBC2F00CA9BA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		630BDBD91EDBBC2F00CA9BA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		630BDBDB1EDBBC2F00CA9BA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF6A8C00382B811CA0D93F33 /* Pods-MeowInvoice.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MeowInvoice/MeowInvoice.entitlements;
+				DEVELOPMENT_TEAM = UA35L9FR9N;
+				INFOPLIST_FILE = MeowInvoice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = io.meow.MeowInvoice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		630BDBDC1EDBBC2F00CA9BA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E81D8FABBF93169582466B78 /* Pods-MeowInvoice.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MeowInvoice/MeowInvoice.entitlements;
+				DEVELOPMENT_TEAM = UA35L9FR9N;
+				INFOPLIST_FILE = MeowInvoice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
+				PRODUCT_BUNDLE_IDENTIFIER = io.meow.MeowInvoice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		630BDBDE1EDBBC2F00CA9BA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C323B2D9B83836CC51D96459 /* Pods-MeowInvoiceTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = MeowInvoiceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.meow.MeowInvoiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeowInvoice.app/MeowInvoice";
+			};
+			name = Debug;
+		};
+		630BDBDF1EDBBC2F00CA9BA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EDC5AF80B2751E5A95D9CAE /* Pods-MeowInvoiceTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = MeowInvoiceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.meow.MeowInvoiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeowInvoice.app/MeowInvoice";
+			};
+			name = Release;
+		};
+		630BDBE11EDBBC2F00CA9BA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37FEAE4123FADDC5A8DDAF8D /* Pods-MeowInvoiceUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MeowInvoiceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.meow.MeowInvoiceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MeowInvoice;
+			};
+			name = Debug;
+		};
+		630BDBE21EDBBC2F00CA9BA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0485EFC7240F22DC2C20F29 /* Pods-MeowInvoiceUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MeowInvoiceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.meow.MeowInvoiceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MeowInvoice;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		630BDBAD1EDBBC2F00CA9BA1 /* Build configuration list for PBXProject "MeowInvoice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				630BDBD81EDBBC2F00CA9BA1 /* Debug */,
+				630BDBD91EDBBC2F00CA9BA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		630BDBDA1EDBBC2F00CA9BA1 /* Build configuration list for PBXNativeTarget "MeowInvoice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				630BDBDB1EDBBC2F00CA9BA1 /* Debug */,
+				630BDBDC1EDBBC2F00CA9BA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		630BDBDD1EDBBC2F00CA9BA1 /* Build configuration list for PBXNativeTarget "MeowInvoiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				630BDBDE1EDBBC2F00CA9BA1 /* Debug */,
+				630BDBDF1EDBBC2F00CA9BA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		630BDBE01EDBBC2F00CA9BA1 /* Build configuration list for PBXNativeTarget "MeowInvoiceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				630BDBE11EDBBC2F00CA9BA1 /* Debug */,
+				630BDBE21EDBBC2F00CA9BA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 630BDBAA1EDBBC2F00CA9BA1 /* Project object */;
+}

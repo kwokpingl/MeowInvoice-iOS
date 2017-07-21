@@ -1,0 +1,94 @@
+PODS:
+  - Alamofire (4.5.0)
+  - Amplitude-iOS (3.14.1)
+  - Crashlytics (3.8.5):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.12)
+  - Firebase/Core (4.0.3):
+    - FirebaseAnalytics (= 4.0.2)
+    - FirebaseCore (= 4.0.3)
+  - Firebase/Messaging (4.0.3):
+    - Firebase/Core
+    - FirebaseMessaging (= 2.0.0)
+  - FirebaseAnalytics (4.0.2):
+    - FirebaseCore (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseCore (4.0.3):
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseInstanceID (2.0.0):
+    - FirebaseCore (~> 4.0)
+  - FirebaseMessaging (2.0.0):
+    - FirebaseAnalytics (~> 4.0)
+    - FirebaseCore (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - Protobuf (~> 3.1)
+  - Google-Mobile-Ads-SDK (7.21.0)
+  - GoogleToolboxForMac/Defines (2.1.1)
+  - GoogleToolboxForMac/Logger (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+  - GoogleToolboxForMac/NSData+zlib (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+  - Kanna (2.1.1)
+  - NetworkRequestKit (1.0.1):
+    - Alamofire (~> 4)
+    - PromiseKit (~> 4)
+    - SwiftyJSON (~> 3)
+  - Nimble (7.0.1)
+  - PromiseKit (4.2.2):
+    - PromiseKit/Foundation (= 4.2.2)
+    - PromiseKit/QuartzCore (= 4.2.2)
+    - PromiseKit/UIKit (= 4.2.2)
+  - PromiseKit/CorePromise (4.2.2)
+  - PromiseKit/Foundation (4.2.2):
+    - PromiseKit/CorePromise
+  - PromiseKit/QuartzCore (4.2.2):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (4.2.2):
+    - PromiseKit/CorePromise
+  - Protobuf (3.3.0)
+  - Quick (1.1.0)
+  - SwiftyJSON (3.1.4)
+  - SwiftySound (0.4.0)
+  - SwiftyUserDefaults (3.0.0)
+
+DEPENDENCIES:
+  - Amplitude-iOS (~> 3)
+  - Crashlytics
+  - Fabric
+  - Firebase/Core
+  - Firebase/Messaging
+  - Google-Mobile-Ads-SDK (~> 7.0)
+  - Kanna (~> 2.1.0)
+  - NetworkRequestKit (~> 1.0.1)
+  - Nimble
+  - Quick
+  - SwiftySound
+  - SwiftyUserDefaults
+
+SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  Amplitude-iOS: 4a3c8807b2ea5369dc11e87e23825bff01e5a922
+  Crashlytics: dfbae35ef22ca189240d230ad501feea4ee85d2d
+  Fabric: f050464eac45a2ce5a8e6e6a07e977c0df32fe28
+  Firebase: 9e33fdfbca37cab635c693883caa90a4475b842b
+  FirebaseAnalytics: ad41720e3e67fc63fbe3d2948d3e26932a8de311
+  FirebaseCore: c709067051de07bdaffdc4e735cd7299a23c463a
+  FirebaseInstanceID: 9fbf536668f4d3f0880e7438456dabd1376e294b
+  FirebaseMessaging: 227406c05b0dc9290702d2e9f18ab5528f0c2cf2
+  Google-Mobile-Ads-SDK: 4a6f1b43c8cc0e1e95a3b59d9f52a01671c6f9f3
+  GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
+  Kanna: 9b4b086c218703f2b94f5b21a466217dd2f9332e
+  NetworkRequestKit: 4aa8bf3c5f1eaed22e0e92f0f011b367af4b2aa3
+  Nimble: 657d000e11df8aebe27cdaf9d244de7f30ed87f7
+  PromiseKit: 00e8886881f151c7e573d06b437915b0bb2970ec
+  Protobuf: d582fecf68201eac3d79ed61369ef45734394b9c
+  Quick: dafc587e21eed9f4cab3249b9f9015b0b7a7f71d
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  SwiftySound: 4897b230859801982700bb08ec40fa000ea2e59a
+  SwiftyUserDefaults: 0f1d45fc3aafb9064dac661e367f8f83fe21a4b4
+
+PODFILE CHECKSUM: b8a28c2c2268d03dac36dc480c5bfa92e378ccc7
+
+COCOAPODS: 1.2.1
